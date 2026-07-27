@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leilon Krónikái: A Jégtől a Viharig</title>
+<style>
+    :root {
+        --text-main: #e2e8f0;
+        --border-color: rgba(255, 255, 255, 0.2);
+        --accent: #7dd3fc;
+        --accent-dark: #38bdf8;
+    }
+    
+    body {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 40px 20px;
+        color: var(--text-main);
+        background-color: #020617;
+        background-image: 
+            linear-gradient(rgba(2, 6, 23, 0.4), rgba(2, 6, 23, 0.8)),
+            url('images/frozen_bg.jpg');
+        background-size: cover;
+        background-position: top center;
+        background-attachment: fixed;
+    }
+    
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        /* Erősebb, sötétebb tejüveg a tökéletes olvashatóságért */
+        background: rgba(9, 16, 36, 0.85);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        padding: 50px;
+        border-radius: 20px;
+        border: 1px solid rgba(125, 211, 252, 0.15);
+        box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+    }
+    
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 10px;
+        margin-top: 50px;
+        color: var(--accent);
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    h2 { font-size: 1.8em; margin-top: 30px; color: var(--accent); }
+    h3 { font-size: 1.5em; margin-top: 25px; color: var(--accent-dark); text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+    p { margin-bottom: 15px; text-align: justify; }
+    em { font-style: italic; color: #94a3b8; }
+    strong { font-weight: bold; color: #fff; }
+    ul { margin-bottom: 15px; }
+    li { margin-bottom: 8px; }
+    blockquote { border-left: 4px solid var(--accent); padding-left: 15px; margin-left: 0; font-style: italic; color: #cbd5e1; }
+    
+    .character-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        transition: transform 0.2s, background 0.2s;
+    }
+
+    .character-card:hover {
+        background: rgba(255, 255, 255, 0.08);
+        transform: translateY(-2px);
+    }
+    
+    .character-name {
+        font-size: 1.3em;
+        font-weight: bold;
+        color: var(--accent);
+        margin-bottom: 5px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(125, 211, 252, 0.5), rgba(0, 0, 0, 0));
+        margin: 40px 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div style="text-align: center; margin-bottom: 80px; margin-top: 50px;">
+        <h1 style="border: none; font-size: 3em;">Leilon Krónikái: A Jégtől a Viharig</h1>
+        <p style="font-size: 1.5em; text-align: center; margin-bottom: 30px; color: var(--accent-dark);">Feljegyzések a Kardpart hőseinek tetteiről, 1491 DR-től napjainkig.</p>
+    </div>
+
+    <h1>A Hősök</h1>
+    <p>A Phandalin és Leilon környékét védelmező csapat összetétele az évek során formálódott, de a jelenlegi krónika a következő, aktív kalandozók tetteit örökíti meg:</p>
+
+    <div class="character-card">
+        <div class="character-name">Tharion Graveward</div>
+        <p><strong>Ember Pap (Grave Domain - Kelemvor) (10. szint)</strong></p>
+        <p>Egy brutális bányászati katasztrófa túlélőjeként a mélyben, a sötétségben találta meg Istenének, Kelemvornak a hívását. Számára a halál nem kegyetlen ellenség, hanem egy méltóságos, elkerülhetetlen rend része. Fekete pajzsával, csontdíszes páncéljával, pörölyével és ásójával a harctér sötét oltalmazója. Vele még az új temető ásója, Tharion (Dani) is jóban lett.<br>
+        <em>"A végzeted kopogtat, és én vagyok, aki kinyitja az ajtót."</em></p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-name">Doni Suko</div>
+        <p><strong>Erdei Tünde Harcos (Outlander) (9. szint)</strong></p>
+        <p>Hatalmas fizikai erejéről, lenyűgöző ügyességéről és egyedi fafaragó, valamint alkimista tehetségéről ismert. Doni a harcászat mestere, brutális manőverei – legyen az gáncsolás vagy pusztító lefegyverzés – már sok ellenfél vesztét okozták. Csendes lépteit, vízen járó gyűrűjét (Ring of water walking) és lobogó köpenyét (Cloak of Billowing) mindig egy hűséges mókus kíséri a kalandok során.</p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-name">Ra'az Duskwhisker (Raaz)</div>
+        <p><strong>Tabaxi Zsivány / Boszorkánymester (Warlock) (10. szint)</strong></p>
+        <p>Egy kiirtott sivatagi sírrabló nomád törzs egyetlen túlélője (Haunted One). A pusztaságban, a biztos halál torkában Raaz egy sötét, megnevezhetetlen paktumot kötött a túlélésért: cserébe minden győzelme után lelkeket áldoz patrónusának. Múltjának árnyai nem hagyják nyugodni, elhunyt törzsének szellemei gyakran kísértik – vagy segítik – álmaiban. Jelenleg a Lhammaruntosztól kapott <em>Gyorsaság Szablyáját (Scimitar of Speed)</em> forgatja pact weapon-ként.</p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-name">Bogamin ("Bog")</div>
+        <p><strong>Tortle Varázsló (Order of Scribes) (10. szint)</strong></p>
+        <p>A könyvek, a varázslatok és a történelem megszállott tudósa. Bogamin zseniális elméje szinte minden rejtélyt megfejt. Kísérőjével, egy bagoly familiárissal térképezi fel a világot. Bár egyszer emlékezetes módon beleragadt Aubrey, az árus egy "Beam of Force" mókuskerekébe, azóta óvatosabb a rejtélyes tárgyakkal.</p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-name">Luna</div>
+        <p><strong>Tündér Bárd (10. szint)</strong></p>
+        <p>A mágia és a zene apró művelője, aki szentül meg van győződve arról, hogy a világ egyik legjobb séfje. A valóság – és a társai gyomra – azonban ezt határozottan cáfolja, bár ezt a szemébe senki sem meri nyíltan megmondani.</p>
+    </div>
+    
+    <h3 style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 40px;">Tiszteletbeli (Korábbi) Hősök</h3>
+    
+    <div class="character-card" style="background: rgba(255, 255, 255, 0.01); border-style: dashed;">
+        <div class="character-name" style="color: #94a3b8;">Uris (Urist)</div>
+        <p><strong style="color: #cbd5e1;">Helm Szolgálója (Korábbi Csapattag)</strong></p>
+        <p>A csapat egykori tagja, aki a sárkányvadászat során végig a többiekkel tartott. Ő kapta a sorsfordító látomást Savras szentélyénél, ami elvezette őket a sárkányhoz, de legemlékezetesebb tette talán mégis az volt, amikor egyszerűen ellopta Aubrey-tól a "Beam of Force" nevű, varázslatos mókuskereket. Miután a vérpatkány (warerat) incidens próbára tette, a fehér sárkány legyőzése után nyoma veszett.</p>
+    </div>
+
+    <div class="character-card" style="background: rgba(255, 255, 255, 0.01); border-style: dashed;">
+        <div class="character-name" style="color: #94a3b8;">Baldwin</div>
+        <p><strong style="color: #cbd5e1;">Helm Szolgálója (Korábbi Csapattag)</strong></p>
+        <p>Uris bajtársa és barátja, aki szintén Helm szigorú útját járta. Ő sem úszta meg a vérpatkány fertőzést, de a legfélelmetesebb pillanatát akkor élte át, amikor magának Helmnek a személyes, könyörtelen ítéletével nézett szembe. Ezt a próbát egy csodával határos pillanatban (Nat 20 a 3. death save-nél) élte túl. A kalandok végeztével maszkját és kardját hátrahagyva ő is az ismeretlenbe lépett.</p>
+    </div>
+    <hr>
+
+    <h1>Első Könyv: A Fehér Sárkány Kora (1491 - 1492 DR)</h1>
+    <p>A hősök története Phandalin környékén kezdődött, amikor a vidéket egy fiatal, dühös fehér sárkány, <strong>Cryovain</strong> tartotta rettegésben. A hősök sorra számoltak le a környéket sújtó problémákkal, bejárva a régió minden szegletét.</p>
+    
+    <details style="margin-bottom: 15px; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 15px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <summary style="font-weight: bold; color: var(--accent); font-size: 1.1em;">Fontosabb Helyszínek és Küldetések (Kattints a kibontáshoz)</summary>
+        <div style="margin-top: 10px; padding-left: 10px; border-left: 2px solid var(--accent-dark);">
+            <p><strong>Phandalin:</strong> A kalandok kiindulópontja. A hősök megismerték a helyi vezetőket és árusokat, köztük Harwin Westert (a Tanács tagját, akit Bog polgármesterként emleget), és Delfina Brightshield tünde paplovagot.</p>
+            <p><strong>Umbrage Hill:</strong> Itt találkoztak Adabra Gwynn-nel, a vén bájitalkeverővel, aki később egy ritka hegyi virág (hinkirkuku) cserébe repülés bájitalt is készített nekik.</p>
+            <p><strong>Butterskull Farm:</strong> Hősies küzdelem árán kiszabadították Big Al Kalabát a farmot lerohanó orkok fogságából.</p>
+            <p><strong>Circle of Thunder:</strong> Megtisztították az egykori kentaur otthont a Talos-hívőktől és orkoktól, és barátságot kötöttek Xanttal, a kentaurral.</p>
+            <p><strong>Shrine of Savras:</strong> A jóslás istenének elhagyatott szentélyénél (ahol a 200 éve elpusztított Conyberry lakóinak csontjait találták) Uris látomást kapott a sárkány pontos fészkéről.</p>
+            <p><strong>További Helyszínek:</strong> A teljesség igénye nélkül a csapat bejárta Gnomengarde varázslatos barlangjait, a Törpe Ásatásokat (Dwarven Excavation), a Fakitermelők Táborát (Loggers' Camp), a Sólyom Vadászházat (Falcon's Hunting Lodge) és az Erdei Kúriát (Woodland Manse) is, mindenhol megküzdve a sárkány jelenléte miatt felbátorodott szörnyekkel.</p>
+        </div>
+    </details>
+    <details style="margin-bottom: 15px; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 15px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <summary style="font-weight: bold; color: var(--accent); font-size: 1.1em;">Emlékezetes NPC-k az Első Könyvből (Kattints a kibontáshoz)</summary>
+        <div style="margin-top: 10px; padding-left: 10px; border-left: 2px solid var(--accent-dark);">
+            <p><strong>Harwin Wester:</strong> Phandalin vezetésének tagja, akit Bog előszeretettel emleget polgármesterként.</p>
+            <p><strong>Adabra Gwynn:</strong> A kissé mogorva, de tehetséges vén bájitalkeverő asszony Umbrage Hillről.</p>
+            <p><strong>Delfina Brightshield:</strong> Tünde paplovag (paladin) Phandalinban.</p>
+            <p><strong>Zana Thaelis:</strong> A phandalini kovácsmester (ember nő), akinél a csapat a fegyvereket és páncélokat szerezte be.</p>
+            <p><strong>Puck Caribdas:</strong> Tünde férfi pap, aki Tymorát, a szerencse istennőjét szolgálja a helyi szentélyben.</p>
+            <p><strong>Maria Magdalena & Layton:</strong> A phandalini piac árusai. Maria gyógynövényeket ("füvet") árul miután férje, József elhunyt, Layton pedig a helyi hentes.</p>
+            <p><strong>Alfonz és Bernárd:</strong> Két laza félszerzet (halfling), akik eredetileg a phandalini boltosnak segítettek, de főként arról lettek híresek, hogy ők látták el a csapatot minőségi "fűvel". Üzletük azóta is virágzik: jelenleg ők hordják Phandalinból az árut Leilonba, egyenesen a cigány árus, Aubrey készletébe.</p>
+            <p><strong>Big Al Kalaba:</strong> A megmentett, harcedzett gazda a Butterskull Farmról.</p>
+            <p><strong>Xant:</strong> A kentaur, aki a Circle of Thunder-nél talált menedékre, és aki (enyhén szólva) nem szívleli az orkokat.</p>
+        </div>
+    </details>
+
+    <p>A végső összecsapásra a hegység csúcsán, az <strong>Icespire Hold</strong> fagyos erődítményében került sor. A kapuépületben fosztogató banditák legyőzése után a belső kriptán át (ahol ráleltek Dellsendra Amzar szarkofágjára) feljutottak a tetőre, ahol élet-halál harcot vívtak Cryovainnal. A győzelem után egy felejthetetlen "szánkózással" (egy hegyi tobogánon) tértek vissza a civilizációba, és megkapták a Kardpart hőseinek járó elismerést.</p>
+
+    <hr>
+
+    <h1>Második Könyv: Viharúr Haragja (1492 - 1494 DR)</h1>
+    <p>A sárkány pusztulását követően a csapat egy csendesebb időszakot élt meg, hozzájárulva a part menti <strong>Leilon</strong> városának újjáépítéséhez. A rákövetkező két év során béke és kemény munka jellemezte az életüket.</p>
+    <p>Munkájuk és jelenlétük hatalmas erőt adott a telepeseknek. A város körüli palánkfal felépült, a kikötőben ismét horgonyt vetnek a kereskedőhajók, és ami a legfontosabb: a híres mágustorony, a <strong>House of Thalivar</strong> is megnyitotta kapuit. A hősök saját otthont teremtettek maguknak Leilonban, és a Városi Tanács megbecsült partnereivé váltak.</p>
+
+    <details style="margin-bottom: 15px; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 15px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <summary style="font-weight: bold; color: var(--accent); font-size: 1.1em;">Leilon Kulcsfigurái és a Városi Tanács (Kattints a kibontáshoz)</summary>
+        <div style="margin-top: 10px; padding-left: 10px; border-left: 2px solid var(--accent-dark);">
+            <p><strong>Grizzelda "Morgó" Copperwraught:</strong> Törpe nő, a Városi Tanács katonás, makacs építésvezetője. Meggyőződése, hogy egy olyan várost, amit ennyi munkával építettek fel, nem hagynak el holmi sárkányok miatt.</p>
+            <p><strong>Valdi Estapaar & Jack Torver:</strong> A Tanács további tagjai. Valdi (féltünde) a halászokat képviseli, Jack pedig egy ember kereskedő, aki nemrég nyitotta meg vegyesboltját.</p>
+            <p><strong>Merrygold Brightshine:</strong> Félszerzet pap a Lathander szentélyben. A Tanács tagja, aki mindig hajlandó 10-20 aranyért cserébe meggyógyítani a hősök sebeit.</p>
+            <p><strong>Gallio Elibro:</strong> Rashemi mágus, aki beköltözött a House of Thalivarba. Értékes arkán információkkal (Legend Lore) segíti a csapatot, de mély, rasszista megvetést táplál Aubrey iránt, ami miatt éjszakánként magára zárja a tornyot.</p>
+            <p><strong>Aubrey Silverspun:</strong> "Cigány bizsu" boltos (Aubrey’s Peculiarities). Boltja igazi kincsesbánya a gyanús üzelmeket folytatóknak: kapható nála hangos/vicces baleszerencsés betörő kit, selyemmel kötött "a csend a barátod" tolvajszett, és rubintos álkulcs. Ő birtokolja a Leilon régi hőseit ábrázoló híres festményt is.</p>
+            <p><strong>Tharion (Dani):</strong> Kelemvor papja, aki Leilon új temetőjében dolgozik sírásóként. A csapat (főleg a velük utazó, azonos nevű pap) különösen jó viszonyt ápol vele.</p>
+            <p><strong>Maxi (Maximus Taximus):</strong> Egy furcsa, szekéren utazó tabaxi.</p>
+        </div>
+    </details>
+
+    <hr>
+
+    <h1>Harmadik Könyv: Az Alvó Sárkány Ébredése (1494 DR - Aktuális Események)</h1>
+    <p>A kétéves nyugalom azonban hamarosan szertefoszlott. Új frakciók, kultuszok és sötét entitások kezdték fenyegetni a békét.</p>
+    
+    <h3>Leilonpoint Megmentése</h3>
+    <p>Marciano Belta hívására a csapat a közeli, halászatból élő Leilonpoint megmentésére sietett. A falut brutális sahuaginok ("tengeri ördögök") rohanták le. A mocsáron átkelve a hősök egy régi sóbányában találták meg a lények búvóhelyét. A harc során Bogamin kis híján egy savas Glyph of Warding áldozatává vált, de a mágiája és a <em>Speak with Dead</em> varázslat segítségével felgöngyölítették a csapdát. A falut megmentették, a zsákmányolt fekete gyöngyökkel és 750 arannyal térve haza.</p>
+
+    <h3>A Halálhajó (Deathknight Dreadnaught)</h3>
+    <p>A legvészjóslóbb felfedezést a Tower of Storms melletti zátonyoknál tették. Egy gigantikus, fémből és csontokból épült gályára bukkantak, amit nekromanta mágia járt át. A hajó fedélzetén Myrkul (a Halál Ura) hívei és csontváz-minotauruszok szolgáltak. A harc során végeztek Gol Badwinddel, egy Talos-hívó, nagydarab orkkal is.<br>
+    A hajó átkutatása során a hősök hátborzongató felfedezéseket tettek: egy trónnal egybeolvadt csontvázat, valamint információkat a hajó vezetőjéről, bizonyos <strong>Ularan Mortus</strong> nevű halálpapról, aki a Lord of Bones szolgálatában áll, és Anaúria felé tartva egy óriási élőholt sereget kíván összegyűjteni.</p>
+
+
+    
+    <h3>Látomás a Bronz Szentélyben</h3>
+    <p>A csapat északra utazott a Bronze Shrine-hoz, hogy találkozzanak <strong>Lhammaruntosszal</strong>, a "Partok Karmai" nevű ősi, barátságos bronz sárkánnyal. Bahamut szentélyében a csapat egy sötét, apokaliptikus látomást kapott: látták Leilon városát, amint egy mindent elnyelő zöld, mérgező gáz fojtja meg a lakókat, miközben a ködben egy ősi zöld sárkány, <strong>Claugiyliamatar (Vén Csontrágó)</strong> éppen Merrygold Brightshine papot falja fel.</p>
+    <p>Lhammaruntosz megerősítette a látomást, és elmondta, hogy a sárkány a Kryptgarden Forest északi részén tanyázik, ébredése pedig katasztrófával fenyeget. A küldetésért cserébe a bronz sárkány 1000 aranyat ígért, és egy felbecsülhetetlen értékű <em>Gyorsaság Szablyájával (Scimitar of Speed)</em> ajándékozta meg Raazt.</p>
+
+    <h3>Felkészülés a Viadalra</h3>
+    <p>Leilonba visszatérve a csapat beszámolt a fenyegetésről Grizzelda "Morgó" Copperwraughtnak. A törpe építésvezető, bár megdöbbent, makacsul visszautasította, hogy feladják a várost (mondván túl sokat dolgoztak rajta), de azonnal megkezdte a védelmek megerősítését. A hősök a jutalomból és a hajón talált térképek beváltásával <strong>Aubrey Silverspun</strong> "cigány bizsu" boltjában Sárkányok elleni Védőtekercset és Csúszósság Olaját vásároltak.</p>
+    <p>Bogamin eközben meglátogatta Gallio Elibrót a tornyában. A rashemi varázsló elárulta, hogy Claugiyliamatart a Myrkul-kultusz manipulálja. A sárkány varázsgömbökön keresztül figyeli a világot, emberi formára vágyik, a kultisták pedig álmain keresztül férkőznek az elméjébe.</p>
+
+    <h3>A Chimera Crew és az Útszéli Csatározás</h3>
+    <p>Az információkkal felvértezve a csapat dél felé indult a High Roadon. Útközben egy váratlan esemény zavarta meg őket: négy Nagyobb Zombi (Greater Zombie) támadt rájuk, akiket két elit harcos nő, Alevene és Niri hajtott.<br>
+    A zombik elpusztítása után a két nő a kalandozók ellen fordult. A küzdelem rövid volt, de véres: <strong>Doni Suko egyetlen, brutálisan pontos csapással lefejezte Alevene-t</strong>. A megrettent Niri azonnal megadta magát.</p>
+    <p>A kihallgatás során Niri mindent bevallott. Ők a <strong>Chimera Crew</strong> tagjai, akiket Rega Swarn vezet, kinek oldalán egy idomított kiméra (Hamu-lehelet) is harcol. A banda Iniarv tornyában állomásozik, és nyíltan Ularan Mortusnak és a Myrkul-kultusznak dolgoznak, akik éppen egy óriási élőholt sereget élesztenek fel a torony mélyén.</p>
+
+    <h3>Az Erdő Mélyén: A Jelenlegi Helyzet</h3>
+    <p>Ezek után a hősök merész elhatározásra jutottak: Nirit pórázon (fegyvertelenül) vezetve, egyenesen a <strong>Kryptgarden Forest</strong> sűrűjébe, a zöld sárkány, Claugiyliamatar barlangja felé vették az irányt. Tervük vakmerő: megpróbálják magát a zöld sárkányt rávenni arra, hogy pusztítsa el a Myrkul-hívők Iniarv tornyánál készülő seregét, mielőtt azok az ő elméjét – és Leilon városát – is végleg az uralmuk alá hajtanák.</p>
+    
+    <p>Öt napnyi kimerítő, de sikeres erdei menetelés után a csapat végül elérte a sárkány fészkéhez közeli hatalmas vízesést. Bogamin éles szemei észrevették, hogy az erdő madarai természetes riasztórendszerként működnek, így a csapat idejekorán és csendben el tudott bújni.</p>
+    
+    <div style="background-color: rgba(220, 38, 38, 0.1); border-left: 4px solid #dc2626; padding: 15px; margin-top: 20px;">
+        <strong>KÖZVETÍTÉS A JELENBŐL:</strong><br>
+        A hősök jelenleg a sűrű bozótban lapulnak. Lélegzetvisszafojtva figyelik, amint egy Myrkul-járőr halad el a vízesés közelében: egy lebegő, lángoló koponya vezetésével négy ghoul őrjáratozik Claugiyliamatar barlangjának bejárata előtt. A csapat fegyverei élesek, a varázslatok előkészítve, Tharion pedig aktívan érzékeli a közelgő gonoszt.
+        <br><br><em>A következő lépésükön múlhat Leilon sorsa...</em>
+    </div>
+
+    <hr>
+
+    <h1>Negyedik Könyv: Isteni Viszály (Hamarosan...)</h1>
+    <p><em>A krónika ezen lapjai még üresek. A történet folytatása a jövő zenéje...</em></p>
+
+</div>
+
+</body>
+</html>
