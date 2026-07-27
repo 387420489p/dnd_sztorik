@@ -1,0 +1,10 @@
+# AI utasítások és jegyzetek
+.ai_instructions.md
+
+# Python és scriptek (ha ide kerülnének)
+*.py
+__pycache__/
+
+# Rendszerfájlok
+.DS_Store
+Thumbs.db
