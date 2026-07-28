@@ -89,14 +89,68 @@
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(125, 211, 252, 0.5), rgba(0, 0, 0, 0));
         margin: 40px 0;
     }
+
+    .main-header {
+        text-align: center;
+        margin-bottom: 80px;
+        margin-top: 50px;
+    }
+    
+    .main-title {
+        border: none;
+        font-size: 3em;
+    }
+    
+    .main-subtitle {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 30px;
+        color: var(--accent-dark);
+    }
+
+    @media (max-width: 768px) {
+        body {
+            padding: 10px 8px;
+        }
+        .container {
+            padding: 20px 15px;
+            border-radius: 12px;
+        }
+        h1 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 25px;
+        }
+        h3 {
+            font-size: 1.3em;
+            margin-top: 20px;
+        }
+        .main-header {
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+        .main-title {
+            font-size: 2.2em;
+        }
+        .main-subtitle {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .character-card {
+            padding: 15px;
+        }
+    }
 </style>
 </head>
 <body>
 
 <div class="container">
-    <div style="text-align: center; margin-bottom: 80px; margin-top: 50px;">
-        <h1 style="border: none; font-size: 3em;">Leilon Krónikái: A Jégtől a Viharig</h1>
-        <p style="font-size: 1.5em; text-align: center; margin-bottom: 30px; color: var(--accent-dark);">Feljegyzések a Kardpart hőseinek tetteiről, 1491 DR-től napjainkig.</p>
+    <div class="main-header">
+        <h1 class="main-title">Leilon Krónikái: A Jégtől a Viharig</h1>
+        <p class="main-subtitle">Feljegyzések a Kardpart hőseinek tetteiről, 1491 DR-től napjainkig.</p>
     </div>
 
     <h1>A Hősök</h1>
