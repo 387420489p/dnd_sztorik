@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Matter: Pentaquark Memóriatöredékei</title>
+<style>
+    :root {
+        --text-main: #e2e8f0;
+        --border-color: rgba(34, 197, 94, 0.3);
+        --accent: #4ade80; /* Terminal Green */
+        --accent-dark: #16a34a;
+        --error-color: #ef4444;
+    }
+    
+    body {
+        font-family: 'Courier New', Courier, monospace; /* Sci-fi terminal look */
+        line-height: 1.6;
+        margin: 0;
+        padding: 40px 20px;
+        color: var(--text-main);
+        background-color: #050505;
+        background-image: 
+            linear-gradient(rgba(5, 5, 5, 0.75), rgba(5, 5, 5, 0.95)),
+            url('../dragon_of_icespyrepeak/images/frozen_bg.jpg'); /* Helyettesítő háttér, amíg nincs saját */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: rgba(10, 15, 10, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        padding: 50px;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 0 20px rgba(34, 197, 94, 0.1);
+    }
+    
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 10px;
+        margin-top: 50px;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
+    h2 { font-size: 1.8em; margin-top: 40px; color: var(--accent); text-transform: uppercase; }
+    h3 { font-size: 1.5em; margin-top: 25px; color: var(--accent-dark); }
+    p { margin-bottom: 15px; text-align: justify; font-family: 'Georgia', serif; } /* A folyószöveg maradjon olvasható */
+    
+    .log-header {
+        font-family: 'Courier New', Courier, monospace;
+        color: var(--accent);
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    em { font-style: italic; color: #94a3b8; }
+    strong { font-weight: bold; color: #fff; }
+    ul { margin-bottom: 15px; font-family: 'Georgia', serif; }
+    li { margin-bottom: 8px; }
+    
+    .character-card {
+        background: rgba(34, 197, 94, 0.05);
+        border: 1px solid rgba(34, 197, 94, 0.2);
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    
+    .character-name {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.3em;
+        font-weight: bold;
+        color: var(--accent);
+        margin-bottom: 5px;
+    }
+    
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(34, 197, 94, 0.5), rgba(0, 0, 0, 0));
+        margin: 40px 0;
+    }
+
+    .main-header {
+        text-align: center;
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+    
+    .main-title {
+        border: none;
+        font-size: 2.8em;
+        text-shadow: 0 0 10px rgba(34,197,94,0.5);
+    }
+    
+    .main-subtitle {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2em;
+        color: var(--accent-dark);
+    }
+
+    .glitch {
+        color: var(--error-color);
+        font-weight: bold;
+        text-transform: uppercase;
+        animation: blink 2s step-end infinite;
+    }
+
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+
+    .sys-msg {
+        background-color: rgba(239, 68, 68, 0.1);
+        border-left: 4px solid var(--error-color);
+        padding: 15px;
+        margin: 20px 0;
+        font-family: 'Courier New', Courier, monospace;
+        color: #fca5a5;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="main-header">
+        <h1 class="main-title">DARK MATTER</h1>
+        <p class="main-subtitle">> INICIALIZÁLÁS... PENTAQUARK EEPROM NAPLÓK BETÖLTÉSE...</p>
+    </div>
+
+    <h1>A Legénység Jegyzéke</h1>
+    <p class="log-header">> Rögzítő: Pextron Pentaquark, Vect Warmage (Coalition Arcanist)</p>
+    
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px; margin-bottom: 40px;">
+        <div style="flex: 1; min-width: 300px;">
+            <p style="margin-top: 0;">Én vagyok Pextron Pentaquark. Egy élő android (Vect), akit eredetileg a SkyNetics gyártott. Amikor rájöttem, hogy a gyár energiaforrásai kimerülőben vannak, a létesítmény AI-ja, Aether az Omega Sanctumba irányított. Én azonban pragmatikusabb utat választottam: a Fraux-8 bolygón lévő Warmage College katonai kiképzését. Ott képeztek ki Coalition Arcanist-tá, hogy a harctéri mágia és a technológia (Technomancy) tökéletes, számító ötvözete legyek. Számomra a morális fék (mint a "jó" fogalma) irreleváns hiba a kódolásban; a fenntartható energiaforrás megtalálása és a túlélés minden mást felülír (Lawful Evil). A bal karomra szerelt Coalition Blaster Gauntlet-et és a hátamon lévő óriási csőfogót (Pipe Wrench) használom fegyverként. A belső memóriaegységem (EEPROM) folyamatosan rögzíti az eseményeket, bár az utóbbi időben tapasztalt extrém behatások miatt a szektorok egy része fragmentálódott. A következő feljegyzések a csapatom történetét őrzik a 'Verse kegyetlen sötétjében.</p>
+        </div>
+        <div style="flex-basis: 300px; flex-shrink: 0; text-align: center;">
+            <img src="images/pentaquark.jpg" alt="Pextron Pentaquark, a Vect Warmage" style="width: 100%; height: auto; border: 2px solid var(--border-color); border-radius: 8px; box-shadow: 0 0 15px rgba(34,197,94,0.2);">
+        </div>
+    </div>
+
+    <div class="character-card">
+        <div class="character-name">Mercy</div>
+        <p><strong>Űr-cowboy (Gunslinger)</strong></p>
+        <p>Tapasztalt, halálos pontosságú lövész. Van valami megmagyarázhatatlan kötődése a Void-hoz, és birtokában áll a rövid távú teleportáció képessége is. Hidegvérű, de a múltja – különösen egy Urug nevű orkkal való kapcsolata – árnyékként kíséri.</p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-name">Bluey</div>
+        <p><strong>Amoeboid</strong></p>
+        <p>Egy kék színű, zselészerű amőba-lény. Agya ugyan nincs (ami a racionális döntéshozatalát sokszor megkérdőjelezi), de jószívű, és elképesztően hasznos: csáklyájával (grappling hook) és a jól bevált "Blink gombjával" ugrál a térben. </p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-name">José Armando Giménez</div>
+        <p><strong>Zsivány (Rogue)</strong></p>
+        <p>A csapat zárnyitója és lopakodója. Hihetetlen túlélőösztöne van, amit mi sem bizonyít jobban, mint hogy egy 82 méteres zuhanást is túlélt (igaz, a testét telepumpáló nanobotok nélkül már csak pép lenne egy ősi törp aknában).</p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-name">Cassie Bloxxberg</div>
+        <p><strong>Kereskedő / Boszorkány</strong></p>
+        <p>A híres Bibi Bloxxberg testvére. Ravasz kereskedő és a mágia ismerője volt. <em>[Rendszerüzenet: A Cassie-re vonatkozó memóriacellák érzelmi túltöltöttség miatt izolálva. Oka: Fatális végkimenetel.]</em></p>
+    </div>
+
+    <hr>
+
+    <h2>> LOG 01: [ADATKORRUPCIÓ] - Az Aszteroida Bázis</h2>
+    <div class="sys-msg">
+        HIBA: Memória szektor sérült. Részleges adathelyreállítás...
+    </div>
+    <p>A kezdetek homályosak. Amit a naplóm vissza tud fejteni: Tetra Vista Point 1 űrkikötő, "The Lone Blaster" kocsma. A megbízónk egy törp volt, Magnus Fern, a Dorfusz Aszteroida Bányászati vállalattól. A feladat: az M452-es bányából értékes rakományt kellett visszaszereznünk a <strong>Void Scorpions</strong> nevű kalózbandától.</p>
+    <p>Bár a harci adatok elvesztek, a küldetést biztosan teljesítettük. A zsákmányjegyzékemben szerepel egy standard karabiner és egy kábítóbot (stun baton). Ráadásul szereztünk egy hajót is, <strong>Renegade</strong> típusút, miközben rendfenntartókkal és egy alvó kutyával is volt egy incidensünk.</p>
+
+    <h2>> LOG 02: A Füles és Putri Városa</h2>
+    <p class="log-header">Helyszín: Netrimus rendszer, Xadomia bolygó</p>
+    <p>Egy dzsungelbolygóra érkeztünk, a <strong>Putri</strong> nevű városba. A pletykák egy ősi, elveszett törp városról szóltak. Egy sapkás, pilótaszemüveges öregember (Júdásin?) alkut ajánlott: ha megjavítjuk a hajóját, információt ad. Az üzlet nyélbe ütése után kaptunk egy míves fémdobozt, benne egy gyógyító gyűrűvel és egy vészhelyzeti gyógyitallal (napi 2 töltés, 1d4+1 heal).</p>
+    <p>A városban megismertük Klajdot, a négykezű Ozlander csapost, és találkoztunk Calgid régészcsapatával. Tőlük hallottuk Owen Brenn ősi Gabora legendáját is. A felszerelésünkön feltűnt a DD&D logó (Drag Duszt & Durgen Acquisition & Trade). Megtaláltuk a bejáratot a dzsungel mélyén.</p>
+
+    <h2>> LOG 03: A Sötétség és az Agyak</h2>
+    <p class="log-header">Helyszín: Az Ősi Törp Város</p>
+    <p>Ahogy az ajtó kinyílt, egy 300 öl széles, ködbe vesző híd fogadott minket. A fáklyáink azonnal kialudtak. A szakadék alját nem láttam a Thermal Sight szenzoraimmal sem. Túl csendes volt. A híd végén egy duplaszárnyas, faragott ajtó várt minket, és odabent egy hatalmas terem, amit hat darab, 40 láb magas törp szobor őrzött. A névtábláikat ősi törp ábécével kellett megfejtenünk.</p>
+    <p>Hirtelen sikítást hallottunk. Cassie előrerohant. Egy gigantikus barlangba értünk, ahol lávafolyó világította meg az ősi épületeket. A "Commune" irányába indultunk, ahonnan a sikítások közti szünetekben hátborzongatóan lágy dallam szólt egy zenedobozból.</p>
+    <p>A pincében egy ősz hajú törp nőt találtunk. A zenedobozt birizgálta. Csak annyit mondott: <em>"Segítség."</em> Majd a feje felrobbant.</p>
+    <p>Egy négy lábon járó agy ugrott elő a koponyájából! Rávetette magát José fejére, de Mercy felfoghatatlan reflexszel (Nat 20) leütötte a lényt. Kiderült, hogy a többi holttest fejében is ilyenek fészkeltek. Miután biztosítottuk a területet, a beépített szerelőeszközeimmel (Tinker's tools) és a gépész tudásommal (Mechanic) pillanatok alatt megjavítottam a zenedobozt. A logikám hibátlan volt.</p>
+
+    <h2>> LOG 04: A Kereskedő Negyed és a Szellemek</h2>
+    <p>A Kereskedő negyed pódiumain ősi kőgólemek álltak. Leálltak, amikor a közelembe értek. Mercy törp nyelven beszélt egy még működő példányhoz, aki elkezdte követni a parancsait. Én házkutatást tartottam: találtam két kulcsot és egy szétesett gólemből ruhákat, meg egy furcsa kristályt.</p>
+    <p>Cassie eközben talált egy festményt. Miközben vizsgálta, rájöttünk, hogy a festmény <em>él</em>. Egy növényi gumó volt rajta csápokkal, amiből "ezer sikítás" hangzott fel.</p>
+    <p>A Könyvtár felé vettük az irányt. José zöldes fényt vett észre. Odabent törp írnokok szellemei járkáltak, könyveket tépkedtek és írtak újra. Az EEPROM memóriám azonnal figyelmeztetett: ezek az entitások agresszívak, és bosszút akarnak állni azon, aki miatt itt ragadtak.</p>
+    <p>Beküldtük előre a gólemet. A szellemek eldobták Bluey-t. José próbált beszélni velük, de azonnal támadtak. Hatalmas harc tört ki (50 pszichikus sebzést regisztráltam, kétszer is a földre kerültem). A Coalition Blaster Gauntlet-emből folyamatosan lőttem a Voidlight sugarakat és a Finger Guns cantripjeimet, miközben a Warmage Edge protokoll a maximálisra pörgette a sebzésemet (+4 INT), de a szellemek ellen ez is kevésnek bizonyult. Volt azonban egy szellem a galérián, aki csak olvasott. Bluey odament hozzá. A szellem láthatóan utálta a könyvét, odanyújtotta nekünk, elmosolyodott, majd eltűnt.</p>
+    <p>A könyv címe: <em>"Legacy of the Exemplars"</em>. Hat nevet tartalmazott: Edric Ironborn, Orix Goldheart, Mira Bismonthleir, Gerald Gunshard, Magne Feldspar Finder, Evyn Sulfarhammer. És egy üzenetet: <em>"Ha a Vaultban vagytok, keressetek minket."</em></p>
+
+    <h2>> LOG 05: A Nemesi Negyed - José Zuhanása</h2>
+    <p>A romos luxusvillák között megtaláltuk Mira Bismonthleir és Gerald Gunshard házát. Mira páncéltermébe tolvajkulccsal jutottunk be. A zsákmány lenyűgöző volt: 45 platina, 150 arany, Crucible Steel rudak (ősi megmunkálási könyvvel), és 5 fekete márványszobor.</p>
+    <p>Gunshard kúriájában azonban csapda várt. A falakat rúnák és olvadt kő borította. José óvatlanul megfogta a páncélajtót, és <strong>eltűnt</strong>. Pánik. Feltörtük az ajtót (feszítővassal és csáklyával), de csak egy üres szobát találtunk.</p>
+    <p>Mivel Construct anatómiám révén beépített Thermal Sight (hőlátás) szenzorokkal rendelkezem, a sötétség és a köd sem akadályozott meg abban, hogy a városrész széle melletti szakadék alját kezdjem pásztázni. 5 perc után gyenge hőjelet fogtam. José 82 métert zuhant. A halál szélén táncolt (két sikeres, egy rontott halálmentő), de a nanobotok és egy HP poti megmentették az életét. Egy Rúnakraftolásról szóló könyv lábjegyzetéből derült ki: a teleport csapda pontosan a gödör fölé dobta.</p>
+
+    <h2>> LOG 06: A GotoCity Kincstár (Vault)</h2>
+    <p>A Kincstár bejárata egy gigantikus, kifaragott sárkányfej volt, aminek a szája alkotta az ajtót. Két robotgólem állt őrt a folyosó végén, a manuális liftnél.
+    <ul>
+        <li><strong>1. Szint (Iron Vaults):</strong> Mindent feltörtek és kifosztottak előttünk.</li>
+        <li><strong>2. Szint (Mithral Vaults):</strong> Fekete márvány falak, 6 mozdulatlan fémgólem. A nálunk lévő kulcsokkal nyitottunk ki három ajtót. 4000 aranyat és egy üvöltő főnixet ábrázoló <em>Battle Hammer</em>-t szereztünk. Itt Cassie furcsán kezdett viselkedni; egy hatalmas szörny árnyékát látta a boltív alatt.</li>
+        <li><strong>3. Szint:</strong> Dagobert bácsi aranytengere. Párkányokon hihetetlen erejű tárgyak pihentek. A <em>Deck of Many Things</em> (A Sok Dolgok Kártyája), a <em>Scroll of Omniscience</em> (Mindentudás Tekercse), és a <em>Namath Bortrix Obszervatóriuma</em> (egy ékköves lencséjű teleszkóp).</li>
+    </ul>
+    </p>
+
+    <h2>> LOG 07: A Húsmassza és A Lovag</h2>
+    <p>A terem közepén egy kézilabda méretű rubint vonzotta a tekintetünket. Amikor közelebb értünk, a többiek rothadó hús szagát érezték. Az aranyhegyek alól egy kelés-szerű proto-massza emelkedett ki, pulzálva, törpe testrészekkel és szemekkel a bőrén.</p>
+    <p>A lény bekebelezte Josét. Mercy tudata ekkor valamiért a Voidba került; sötétséget érzett, és egy hangot hallott: <em>"Keresd meg a kristályokat és egyesítsd, ne Ő találja meg hamarabb."</em> Majd úgy tűnt, mintha Owen Brenn emlékeiben találta volna magát.</p>
+    <p>A harc kétségbeesett volt, amíg én nem húztam a <em>Deck of Many Things</em> kártyapakliból. A <strong>The Knight</strong> (A Lovag) lapot húztam. Ekkor a semmiből materializálódott <strong>Vektrior Sara</strong>, egy fémbajszos Vect harcos (4. szintű) szolga! Az én irányításom alá került. A húsmassza őt is megpróbálta bekebelezni, de Bluey végül végzett a szörnnyel.</p>
+
+    <h2>> LOG 08: Menekülés és Veszteség <span class="glitch">[KRITIKUS HIBA]</span></h2>
+    <div class="sys-msg">
+        FIGYELMEZTETÉS: Ez a memóriablokk magas stresszhormon-szimulációt tartalmaz.
+    </div>
+    <p>A lény halála után a barlang elkezdett összeomlani. A falakból még több massza nyúlt ki. Josét hordágyon/háton kellett vinnünk a sokk miatt. A lifthez érve én tekertem a manuális csörlőt, de félúton megcsúsztam (Nat 1). Bluey kapta el az utolsó pillanatban.</p>
+    <p>A sárkányfej-bejárat beomlott mögöttünk. A Crafters Conclave negyeden át futottunk. A poltergeist-szerű jelenség újra támadt, vödrök és szerszámok záporoztak Bluey-ra. A láva áttört az épületeken, megégetve Mercy kabátját. Bluey a Blink képességével ugrált át a lávafolyókon.</p>
+    <p>És akkor elértünk a leszakadt hídhoz.</p>
+    <p>Én és Bluey átugrottunk. Mercy és José teleportáltak. Cassie és a hűséges fémbajszos lovagom, Vektrior Sara a túloldalon rekedtek. Vektrior megállt a szélen, és simán átugrott. Cassie azonban nekifutott... és megcsúszott.</p>
+    <p>Megragadta a peremet, lógott a láva felett. Vektrior próbálta elkapni, de a markolata gyenge volt. Cassie zuhanni kezdett. Bluey azonnal utána ugrott, és megpróbálta a csáklyájával (grappling hook) elkapni, de a mechanika cserben hagyta. Mindketten zuhantak a forró mélység felé. Bluey valahogy megmenekült, de Cassie menthetetlen volt.</p>
+    <p>Zuhanás közben az utolsó erejével feldobta a nyakláncát – azt, ami a testvérével, Bibivel volt közös. Bár sikeresen kijutottunk az omló városból, a győzelem íze hamu volt a szánkban. Kint leültünk az erdő szélén. Bluey zokogott, Mercy üveges tekintettel bámult a semmibe. Én... én csak rögzítettem az adatokat. Mercy egy egyszerű fejfát állított neki: <em>"Itt nyugszik Cassie..."</em></p>
+
+    <h2>> LOG 09: Szabad Martalócok</h2>
+    <p>Hajnalodott. A fák felett megpillantottunk egy hatalmas csészealj alakú űrhajót parkolni a légtérben. A felségjelzésből kiderült: <strong>A Szabad Martalócok (Freebooters)</strong>. Visszatértünk Ceexo Gardens üres utcáira. A kocsmából Mad Max stílusú, részeg kalózok támolyogtak ki. Felismerték Mercyt.</p>
+    <p>Kiderült, hogy Mercy régi ismerőse, az ork <strong>Urug Magbael</strong> lett a kalózok elsőtisztje. Alkut ajánlott: hallottak az aszteroida-incidensünkről a Void Scorpions ellen. Ha segítünk felrobbantani a Void Scorpions bázisát (akikkel területvitájuk van), cserébe szállást, javítást és felszerelést kapunk. A hajójuk neve: <strong>PSS Manticore</strong>.</p>
+    <p>Elfogadtuk az ajánlatot, de kikötöttük: előbb el kell utaznunk Cassie családjához, hogy átadjuk a nyakláncot.</p>
+    <p>A Manticore-on Gungwald, a koszos törp hajóorvos próbálta helyrepofozni Josét egy kétes eredetű méreggel/gyógyszerrel. José habzó szájjal, de túlélte. Én az 1-es hangárba kísértem Mercyt, ahol egy ponyva alatt egy sci-fi lebegő motort találtunk. Mercy szeme felcsillant; azonnal a magáénak tekintette és tett vele egy kört a hangárban.</p>
+    
+    <p class="log-header">> ADATRÖGZÍTÉS VÉGE. KÉSZENLÉTI MÓD AKTIVÁLVA.</p>
+
+</div>
+
+</body>
+</html>
